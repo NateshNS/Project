@@ -1,0 +1,26 @@
+package com.PageobjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Automation_Proceedtocheckout2 {
+	public static WebDriver driver;
+	@FindBy(xpath="//*[text()='Proceed to checkout']")
+	private WebElement proceedcheckout;
+
+	public Automation_Proceedtocheckout2(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+		
+	}
+
+	public WebElement getProceedcheckout() {
+		return proceedcheckout;
+	}
+	
+	
+	
+
+}
